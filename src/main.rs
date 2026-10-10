@@ -1,3 +1,9 @@
+use particles::ParticlesPlugin;
+
+use bevy::prelude::*;
+
 fn main() {
-    particles::app().run();
+    App::new()
+        .add_plugins((DefaultPlugins, ParticlesPlugin))
+        .run();
 }
